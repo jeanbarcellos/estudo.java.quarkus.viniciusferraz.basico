@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.POST;
@@ -48,6 +49,19 @@ public class ProdutoResource {
         } else {
             throw new NotFoundException();
         }
+
+    }
+
+    @DELETE
+    @Path("{id}")
+    @Transactional
+    public void buscarTodosProdutos(@PathParam("id") Long id) {
+
+        Optional<Produto> produtoOp = Produto.findByIdOptional(id);
+
+        produtoOp.ifPresentOrElse(Produto::delete, () -> {
+            throw new NotFoundException();
+        });
 
     }
 
