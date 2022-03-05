@@ -25,3 +25,20 @@ Trata-se de um curso básico, que tem por finalidade configurar um ambiente comp
 - https://www.udemy.com/course/des-web-quarkus-basico/
 - https://github.com/viniciusfcf/udemy-quarkus-basico
 
+<br>
+<br>
+<br>
+
+---
+
+## Anotações
+
+Executar a applicação
+
+```bash
+./mvnw quarkus:dev
+```
+
+```bash
+docker run --newwork host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste -d -rm mysql:8.0.19
+```
