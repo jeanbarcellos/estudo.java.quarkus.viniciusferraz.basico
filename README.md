@@ -1,56 +1,27 @@
-# primeiro-com-maven Project
+_Repositório apenas para estudo_
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+# Curso: Desenvolvimento Web com Quarkus - Básico
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+Códigos gerado a partir do curso '**Microsserviços Java com Spring Boot e Spring Cloud**'
 
-## Running the application in dev mode
+<br>
 
-You can run your application in dev mode that enables live coding using:
-```shell script
-./mvnw compile quarkus:dev
-```
+**Descrição:**
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+Neste curso irei abordar o Quarkus: framework que irá revolucionar o mundo Java e de microsserviços que rodam em nuvem. Quarkus é um framework Open Source mantido pela Red Hat que promete tornar o desenvolvimento em Java divertido, rápido, com utilização de memória incrivelmente baixo e tempo de boot incrivelmente rápido.
 
-## Packaging and running the application
+É o 'framework' ideal para desenvolvimento de aplicações que rodarão em nuvem: Azure, AWS e Google Cloud.
 
-The application can be packaged using:
-```shell script
-./mvnw package
-```
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+Trata-se de um curso básico, que tem por finalidade configurar um ambiente completo para desenvolvimento, apresentar o que o Quarkus traz de novidades, criar um CRUD básico para demonstração do seu potencial e ao final compararemos o boot time e a utilização de memória com uma aplicação similar desenvolvida em Spring Boot.
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+<br>
 
-If you want to build an _über-jar_, execute the following command:
-```shell script
-./mvnw package -Dquarkus.package.type=uber-jar
-```
+**Instrutor:**
 
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
+- [Vinicius Ferraz Campos Florentino](https://www.udemy.com/user/vinicius-florentino/)
 
-## Creating a native executable
+**Referências:**
 
-You can create a native executable using: 
-```shell script
-./mvnw package -Pnative
-```
+- https://www.udemy.com/course/des-web-quarkus-basico/
+- https://github.com/viniciusfcf/udemy-quarkus-basico
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
-```shell script
-./mvnw package -Pnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/primeiro-com-maven-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
-
-## Provided Code
-
-### RESTEasy JAX-RS
-
-Easily start your RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
