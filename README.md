@@ -33,12 +33,28 @@ Trata-se de um curso básico, que tem por finalidade configurar um ambiente comp
 
 ## Anotações
 
+Adicionar as extensões
+
+```
+quarkus-hibernate-orm-panache
+quarkus-rest-client-jsonb
+quarkus-jdbc-mysql
+```
+
 Executar a applicação
 
 ```bash
 ./mvnw quarkus:dev
 ```
 
+Banco de dados
+
 ```bash
-docker run --newwork host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste -d -rm mysql:8.0.19
+docker run --network host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste -d --rm mysql:8.0.19
+```
+
+Adicionar extensão `Health`
+
+```bash
+./mvnw.cmd quarkus:add-extension -Dextensions="io.quarkus:quarkus-smallrye-health"
 ```
