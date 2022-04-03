@@ -58,3 +58,14 @@ Adicionar extensão `Health`
 ```bash
 ./mvnw.cmd quarkus:add-extension -Dextensions="io.quarkus:quarkus-smallrye-health"
 ```
+
+Testcontainers
+
+- https://www.testcontainers.org/
+
+
+Database Rider
+
+```
+https://github.com/database-rider/database-rider
+```
