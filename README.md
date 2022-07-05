@@ -29,9 +29,56 @@ Trata-se de um curso básico, que tem por finalidade configurar um ambiente comp
 <br>
 <br>
 
----
+<!-- --- -->
 
 ## Anotações
+
+### **Cinco maneira de criar seu Projeto do Zero**
+
+1. Utilizando o Initializer do Quarkus
+
+   Link: https://code.quarkus.io/
+
+2. Utilizando o Starter do Microprofile
+
+   Link: https://start.microprofile.io/
+
+3. Utilizando a IDE `VS Code`
+
+   No Visual Studio, adicionar extensão `Java` e `Quarkus`
+
+   - Usar os atalhos `Ctrl + Shift + P`
+   - Procurar por `Quarkus: Generate a Quarkus Project`
+   - Escolher `Maven` em `Pick build tool`
+   - Informar a `groupId` e teclar enter.
+   - Informar o `artifactId` e teclar enter.
+   - Informar a `version` (versão do projeto) e teclar enter.
+   - Informar o nome do pacore e teclar enter.
+   - Informar o nome da classe que o quarkus gerará de "Hello" e teclar enter.
+   - Informar as extensões iniciais e teclar enter..
+   - Informar o local onde será salvo o projeto.
+
+4. Utilizando a IDE `Eclipse`
+
+   Acessar o Market place e adicionar a extensão `Quarkus`
+
+5. Utilizando a linha de comando.
+
+   Utilizando a versão mais recente, mesmo sendo RC
+
+   ```bash
+   mvn io.quarkus:quarkus-maven-plugin:create
+   ```
+
+   Utilizando versão específica:
+
+   ```bash
+   mvn io.quarkus:quarkus-maven-plugin:2.10.1.Final:create
+   ```
+
+<br>
+
+### Outros ...
 
 Adicionar as extensões
 
@@ -62,7 +109,6 @@ Adicionar extensão `Health`
 Testcontainers
 
 - https://www.testcontainers.org/
-
 
 Database Rider
 
